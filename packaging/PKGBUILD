@@ -1,7 +1,7 @@
 # Maintainer: chrisOTM
 pkgname=benq-monitor-control
 pkgver=0.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Wayland tray app controlling the BenQ MA320U over DDC/CI"
 arch=('any')
 url="https://github.com/chrisOTM/benq-monitor-control"
