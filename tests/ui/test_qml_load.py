@@ -87,6 +87,6 @@ def test_comboboxes_show_their_current_value(qapp, tmp_path):
     assert window.findChild(QObject, "languageBox").property("currentIndex") == 0  # English
     assert window.findChild(QObject, "cornerBox").property("currentIndex") == 0  # Automatic
     panel = root.property("panel")
-    # The fake monitor reports input 0x13 (USB-C), the 4th entry.
-    assert panel.findChild(QObject, "inputBox").property("currentIndex") == 3
+    # The fake monitor reports input 0x13 (USB-C), the 1st entry.
+    assert panel.findChild(QObject, "inputBox").property("currentIndex") == 0
     window.close()

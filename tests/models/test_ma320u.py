@@ -24,6 +24,12 @@ def test_picture_mode_labels():
     assert MA320U.choice_label(Feature.PICTURE_MODE, 0x23) is None
 
 
+def test_inputs_match_the_osd():
+    # Only the three physical inputs; the capabilities string's 0x0F and 0x15 are not selectable.
+    choices = MA320U.spec(Feature.INPUT_SOURCE).choices
+    assert [(c.value, c.label) for c in choices] == [(0x13, "USB-C"), (0x11, "HDMI 1"), (0x12, "HDMI 2")]
+
+
 def test_hdr_locks():
     for feature in (Feature.PICTURE_MODE, Feature.BRIGHTNESS, Feature.LOW_BLUE_LIGHT, Feature.BRIGHTNESS_INTELLIGENCE):
         assert MA320U.is_locked(feature, 0x23)

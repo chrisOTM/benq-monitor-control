@@ -67,7 +67,7 @@ from live tests on the monitor. **No BenQ code, binaries or resources are includ
 | Picture mode | 0xDC | 0x0F Tux-Book (M-Book), 0x0A sRGB, 0x22 Display P3, 0x32 Cinema, 0x28 Game, 0x12 User; 0x23/0x27 HDR (read-only) |
 | Brightness | 0x10 | 0–100 |
 | Volume | 0x62 | 0–50 |
-| Input | 0x60 | 0x0F DisplayPort, 0x11 HDMI 1, 0x12 HDMI 2, 0x13 USB-C |
+| Input | 0x60 | 0x13 USB-C, 0x11 HDMI 1, 0x12 HDMI 2 |
 | Low Blue Light | 0x19 | 0 off, 1–5 (locked in sRGB and Display P3) |
 | Brightness Intelligence | 0x81 | 0 off, 1 on |
 

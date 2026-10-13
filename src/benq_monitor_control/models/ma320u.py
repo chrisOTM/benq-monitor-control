@@ -11,12 +11,12 @@ PICTURE_MODES = (
     Choice(0x12, "User"),
 )
 
+# The MA320U has three inputs (OSD order). Its capabilities string lists 0x0F DisplayPort
+# and 0x15 instead of 0x13, but there is no DisplayPort input; USB-C reads and writes 0x13.
 INPUTS = (
-    Choice(0x0F, "DisplayPort"),
+    Choice(0x13, "USB-C"),  # read and written (with readback) on 2026-10-13
     Choice(0x11, "HDMI 1"),
     Choice(0x12, "HDMI 2"),
-    Choice(0x13, "USB-C"),  # value read while connected via USB-C
-    Choice(0x15, "Input 0x15"),  # listed in the capabilities, not identified
 )
 
 MA320U = MonitorModel(
