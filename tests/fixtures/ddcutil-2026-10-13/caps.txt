@@ -1,0 +1,131 @@
+Model: MA320U
+MCCS version: 2.2
+Commands:
+   Op Code: 01 (VCP Request)
+   Op Code: 02 (VCP Response)
+   Op Code: 03 (VCP Set)
+   Op Code: 07 (Timing Request)
+   Op Code: 0C (Save Settings)
+   Op Code: E3 (Capabilities Reply)
+   Op Code: F3 (Capabilities Request)
+VCP Features:
+   Feature: 02 (New control value)
+   Feature: 04 (Restore factory defaults)
+   Feature: 10 (Brightness)
+   Feature: 12 (Contrast)
+   Feature: 13 (Backlight control)
+      Values: 00 01 (interpretation unavailable)
+   Feature: 14 (Select color preset)
+      Values:
+         04: 5000 K
+         05: 6500 K
+         08: 9300 K
+         0b: User 1
+   Feature: 16 (Video gain: Red)
+   Feature: 18 (Video gain: Green)
+   Feature: 19 (Unrecognized feature)
+   Feature: 1A (Video gain: Blue)
+   Feature: 59 (6 axis saturation: Red)
+   Feature: 5A (6 axis saturation: Yellow)
+   Feature: 5B (6 axis saturation: Green)
+   Feature: 5C (6 axis saturation: Cyan)
+   Feature: 5D (6 axis saturation: Blue)
+   Feature: 5E (6 axis saturation: Magenta)
+   Feature: 5F (Unrecognized feature)
+      Values: 00 02 03 (interpretation unavailable)
+   Feature: 60 (Input Source)
+      Values:
+         0f: DisplayPort-1
+         11: HDMI-1
+         12: HDMI-2
+         15: Unrecognized value
+   Feature: 62 (Audio speaker volume)
+   Feature: 67 (Unrecognized feature)
+      Values: 00 01 (interpretation unavailable)
+   Feature: 68 (Unrecognized feature)
+      Values: 00 01 (interpretation unavailable)
+   Feature: 69 (Unrecognized feature)
+      Values: 00 01 (interpretation unavailable)
+   Feature: 6A (Unrecognized feature)
+      Values: 00 01 (interpretation unavailable)
+   Feature: 72 (Gamma)
+      Invalid gamma descriptor: 50 64 77 78 8c a0
+   Feature: 81 (Unrecognized feature)
+      Values: 00 01 02 (interpretation unavailable)
+   Feature: 86 (Display Scaling)
+      Values:
+         01: No scaling
+         02: Max image, no aspect ration distortion
+         05: Max vertical image with aspect ratio distortion
+   Feature: 87 (Sharpness)
+   Feature: 8D (Audio mute/Screen blank)
+      Values: 01 02 (interpretation unavailable)
+   Feature: 94 (Audio Processor Mode)
+      Values:
+         01: Mono
+         02: Stereo
+         03: Stereo expanded
+         04: Unrecognized value
+         05: Unrecognized value
+   Feature: 9B (6 axis hue control: Red)
+   Feature: 9C (6 axis hue control: Yellow)
+   Feature: 9D (6 axis hue control: Green)
+   Feature: 9E (6 axis hue control: Cyan)
+   Feature: 9F (6 axis hue control: Blue)
+   Feature: A0 (6 axis hue control: Magenta)
+   Feature: AA (Screen Orientation)
+      Values:
+         01: 0 degrees
+         02: 90 degrees
+         03: 180 degrees
+   Feature: BE (Link control)
+   Feature: C1 (Unrecognized feature)
+   Feature: C2 (Display descriptor length)
+   Feature: C9 (Display firmware level)
+   Feature: CA (OSD/Button Control)
+      Values:
+         01: OSD disabled, button events enabled
+         02: OSD enabled, button events enabled
+         03: OSD disabled, button events disabled
+   Feature: CC (OSD Language)
+      Values:
+         01: Chinese (traditional, Hantai)
+         02: English
+         03: French
+         04: German
+         05: Italian
+         06: Japanese
+         07: Korean
+         09: Russian
+         0a: Spanish
+         0b: Swedish
+         0d: Chinese (simplified / Kantai)
+         0e: Portuguese (Brazil)
+         0f: Arabic
+         12: Czech
+         14: Dutch
+         1a: Hungarian
+         1e: Polish
+         1f: Romanian 
+   Feature: DC (Display Mode)
+      Values:
+         0a: Demonstration
+         0f: Unrecognized value
+         12: Unrecognized value
+         22: Unrecognized value
+         23: Unrecognized value
+         27: Unrecognized value
+         28: Unrecognized value
+         32: Unrecognized value
+   Feature: DF (VCP Version)
+   Feature: E5 (Manufacturer specific feature)
+   Feature: EE (Manufacturer specific feature)
+      Values: 00 01 02 (interpretation unavailable)
+   Feature: EF (Manufacturer specific feature)
+      Values: 00 01 (interpretation unavailable)
+   Feature: F0 (Manufacturer specific feature)
+      Values: 00 01 02 (interpretation unavailable)
+   Feature: F6 (Manufacturer specific feature)
+      Values: 00 01 (interpretation unavailable)
+   Feature: FD (Manufacturer specific feature)
+      Values: 00 03 04 (interpretation unavailable)

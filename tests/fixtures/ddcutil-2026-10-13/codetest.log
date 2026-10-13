@@ -1,0 +1,33 @@
+base: 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+### 19 orig=x00
+  15:00:48 set 0x01 [Unrecognized VCP feature code: 0x19     Try errors:  ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  15:00:52 set 0x03 [Unrecognized VCP feature code: 0x19     Try errors:  ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  15:00:58 set 0x05 [Unrecognized VCP feature code: 0x19     Try errors:  ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+Unrecognized VCP feature code: 0x19
+    Try errors: 
+  restored -> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+### 81 orig=x00
+  15:01:06 set 0x01 [Unrecognized VCP feature code: 0x81     Try errors:  ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  15:01:11 set 0x02 [Unrecognized VCP feature code: 0x81     Try errors:  ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+Unrecognized VCP feature code: 0x81
+    Try errors: 
+  restored -> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+### FD orig=x00
+  15:01:19 set 0x01 [Verification failed for feature fd     Try errors: DDCRC_VERIFY ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  15:01:24 set 0x02 [Verification failed for feature fd     Try errors: DDCRC_VERIFY ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  15:01:29 set 0x03 [Verification failed for feature fd     Try errors: DDCRC_VERIFY ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  15:01:34 set 0x04 [Verification failed for feature fd     Try errors: DDCRC_VERIFY ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  restored -> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+### 5F orig=x02
+  15:01:42 set 0x00 [Unrecognized VCP feature code: 0x5f     Try errors:  ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  15:01:47 set 0x03 [Unrecognized VCP feature code: 0x5f     Try errors:  ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+Unrecognized VCP feature code: 0x5f
+    Try errors: 
+  restored -> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+### 72 orig=x78
+  15:01:55 set 0x50 [Verification failed for feature 72     Try errors: DDCRC_VERIFY ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  15:02:00 set 0x64 [Verification failed for feature 72     Try errors: DDCRC_VERIFY ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  15:02:05 set 0x77 [Verification failed for feature 72     Try errors: DDCRC_VERIFY ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  15:02:10 set 0x8c [Verification failed for feature 72     Try errors: DDCRC_VERIFY ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  15:02:15 set 0xa0 [Verification failed for feature 72     Try errors: DDCRC_VERIFY ]-> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 
+  restored -> 10=65 14=x0b 19=x00 5F=x02 72=x78 81=x00 DC=x0f E5=x03 FD=x00 

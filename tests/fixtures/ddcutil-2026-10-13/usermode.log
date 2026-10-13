@@ -1,0 +1,27 @@
+base: 10=100 14=x05 19=x00 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+### 19 orig=x00
+  15:03:23 set 0x01 -> 10=100 14=x05 19=x01 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+  15:03:28 set 0x03 -> 10=100 14=x05 19=x03 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+  15:03:33 set 0x05 -> 10=100 14=x05 19=x05 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+  restored -> 10=100 14=x05 19=x00 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+### 81 orig=x00
+  15:03:41 set 0x01 -> 10=8 14=x00 19=x00 5F=x02 72=x78 81=x01 DC=x12 E5=x03 FD=x00 
+  15:03:48 set 0x02 -> 10=8 14=x05 19=x00 5F=x02 72=x78 81=x02 DC=x12 E5=x03 FD=x00 
+  restored -> 10=100 14=x05 19=x00 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+### FD orig=x00
+  15:03:57 set 0x01 [Verification failed for feature fd     Try errors: DDCRC_VERIFY ]-> 10=100 14=x05 19=x00 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+  15:04:03 set 0x02 [Verification failed for feature fd     Try errors: DDCRC_VERIFY ]-> 10=100 14=x05 19=x00 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+  15:04:08 set 0x03 [Verification failed for feature fd     Try errors: DDCRC_VERIFY ]-> 10=100 14=x05 19=x00 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+  15:04:13 set 0x04 [Verification failed for feature fd     Try errors: DDCRC_VERIFY ]-> 10=100 14=x05 19=x00 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+  restored -> 10=100 14=x05 19=x00 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+### 5F orig=x02
+  15:04:21 set 0x00 -> 10=100 14=x05 19=x00 5F=x00 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+  15:04:27 set 0x03 -> 10=100 14=x05 19=x00 5F=x03 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+  restored -> 10=100 14=x05 19=x00 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 
+### 72 orig=x78
+  15:04:36 set 0x50 -> 10=100 14=x05 19=x00 5F=x02 72=x50 81=x00 DC=x12 E5=x03 FD=x00 
+  15:04:41 set 0x64 -> 10=100 14=x05 19=x00 5F=x02 72=x64 81=x00 DC=x12 E5=x03 FD=x00 
+  15:04:46 set 0x77 -> 10=100 14=x05 19=x00 5F=x02 72=x77 81=x00 DC=x12 E5=x03 FD=x00 
+  15:04:51 set 0x8c -> 10=100 14=x05 19=x00 5F=x02 72=x8c 81=x00 DC=x12 E5=x03 FD=x00 
+  15:04:56 set 0xa0 -> 10=100 14=x05 19=x00 5F=x02 72=xa0 81=x00 DC=x12 E5=x03 FD=x00 
+  restored -> 10=100 14=x05 19=x00 5F=x02 72=x78 81=x00 DC=x12 E5=x03 FD=x00 

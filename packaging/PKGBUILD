@@ -1,0 +1,23 @@
+# Maintainer: chrisOTM
+pkgname=benq-monitor-control
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Wayland tray app controlling the BenQ MA320U over DDC/CI"
+arch=('any')
+url="https://github.com/chrisOTM/benq-monitor-control"
+license=('MIT')
+depends=('python' 'pyside6' 'ddcutil' 'glib2' 'layer-shell-qt')
+makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel')
+
+build() {
+  cd "$startdir/.."
+  python -m build --wheel --no-isolation --outdir "$srcdir/dist"
+}
+
+package() {
+  cd "$startdir/.."
+  python -m installer --destdir="$pkgdir" "$srcdir"/dist/*.whl
+  install -Dm644 packaging/benq-monitor-control.desktop "$pkgdir/usr/share/applications/benq-monitor-control.desktop"
+  install -Dm644 src/benq_monitor_control/ui/icons/monitor.svg "$pkgdir/usr/share/icons/hicolor/scalable/apps/benq-monitor-control.svg"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

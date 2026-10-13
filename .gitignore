@@ -1,0 +1,26 @@
+# Vendor binaries and extracted packages must never be committed
+vendor/
+*.AppImage
+*.dmg
+*.exe
+*.zip
+# Build / Python
+build/
+dist/
+__pycache__/
+*.pyc
+.venv/
+
+# Brainstorming companion
+.superpowers/
+
+# Local tooling (generated graph, per-machine Claude settings)
+graphify-out/
+.claude/
+*.egg-info/
+packaging/pkg/
+packaging/src/
+*.pkg.tar.zst
+
+# Internal design documents (spec, plan, research notes) stay local
+docs/

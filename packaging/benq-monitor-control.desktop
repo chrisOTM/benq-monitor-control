@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=BenQ Monitor Control
+GenericName=Monitor control
+Comment=Picture modes, brightness and FloW scenarios for the BenQ MA320U
+Exec=benq-monitor-control
+Icon=benq-monitor-control
+Categories=Settings;HardwareSettings;Utility;
+Keywords=monitor;ddc;brightness;benq;
+StartupNotify=false
